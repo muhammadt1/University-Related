@@ -1,0 +1,141 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int stringToInteger(const string &str1);          // function prototype
+int placeStringToRow(const string &str2);         // function prototype
+int placeStringToColumn(const string &str3);      // function prototype
+bool isPlaceStringWellFormed(const string &str4); // function prototype
+
+const int INVALID_COORDINATE = -1;
+
+int main()
+{
+
+  cout << "This program will test place-strings" << endl;
+  cout << endl;
+
+  // Going from string to integer
+  string stringToInt1 = "5";
+  string stringToInt2 = "45";
+  string stringToInt3 = "C5"; // bad string
+
+  cout << "The place-string " << stringToInt1 << " converts to int "
+       << stringToInteger(stringToInt1) << endl;
+  cout << "The place-string " << stringToInt2 << " converts to int "
+       << stringToInteger(stringToInt2) << endl;
+  cout << "The place-string " << stringToInt3 << " converts to int "
+       << stringToInteger(stringToInt3) << endl;
+  cout << endl;
+
+  // Going from string to column
+  string stringToColumn1 = "B6";
+  string stringToColumn2 = "G3";
+  string stringToColumn3 = "25"; // bad string
+
+  cout << "The following place-string " << stringToColumn1
+       << " converts to column " << placeStringToColumn(stringToColumn1)
+       << endl;
+  cout << "The following place-string " << stringToColumn2
+       << " converts to column " << placeStringToColumn(stringToColumn2)
+       << endl;
+  cout << "The following place-string " << stringToColumn3
+       << " converts to column " << placeStringToColumn(stringToColumn3)
+       << endl;
+  cout << endl;
+
+  // Going from a string to a row
+  string stringToRow1 = "A1";
+  string stringToRow2 = "B7";
+  string stringToRow3 = "O3"; // bad string
+
+  cout << "The following place-string " << stringToRow1 << " converts to row "
+       << placeStringToRow(stringToRow1) << endl;
+  cout << "The following place-string " << stringToRow2 << " converts to row "
+       << placeStringToRow(stringToRow2) << endl;
+  cout << "The following place-string " << stringToRow3 << " converts to row "
+       << placeStringToRow(stringToRow3) << endl;
+  cout << endl;
+
+  // To check if the string is "Well Formed"
+  string wellFormed1 = "D6";
+  string wellFormed2 = "E5";
+  string wellFormed3 = "5I"; // bad string
+
+  cout << "Is " << wellFormed1 << " valid? "
+       << isPlaceStringWellFormed(wellFormed1) << endl;
+  cout << "Is " << wellFormed2 << " valid? "
+       << isPlaceStringWellFormed(wellFormed2) << endl;
+  cout << "Is " << wellFormed3 << " valid? "
+       << isPlaceStringWellFormed(wellFormed3) << endl;
+  cout << endl;
+
+  return 0;
+}
+
+int stringToInteger(const string &str1)
+{
+  int i = 0, output = 0;
+
+  if (str1.length() == 0)
+  {
+    return INVALID_COORDINATE;
+  }
+  while (i < str1.length())
+  {
+    if (str1[i] < '0' || str1[i] > '9')
+    {
+      return INVALID_COORDINATE;
+    }
+    output = output * 10 + (str1[i] - '0');
+    i++;
+  }
+
+  return output;
+}
+
+int placeStringToRow(const string &str2)
+{
+  if ((str2.empty() && str2.length() > 0) || str2.length() < 2)
+  {
+    return INVALID_COORDINATE;
+  }
+
+  char firstLetter = str2.at(0);
+  int numForBoard = stringToInteger(str2.substr(1));
+
+  if ((firstLetter < 'A') || (firstLetter > 'Z'))
+  {
+    return INVALID_COORDINATE;
+  }
+
+  return numForBoard;
+}
+
+int placeStringToColumn(const string &str3)
+{
+  char ans = str3[0] - 'A';
+
+  if (str3.length() == 0 || str3[0] == 'I' || str3[0] == 'O')
+  {
+    return INVALID_COORDINATE;
+  }
+  if (str3[0] >= 'A' && str3[0] <= 'Z')
+  {
+    return ans;
+  }
+  else
+  {
+    return INVALID_COORDINATE;
+  }
+}
+
+bool isPlaceStringWellFormed(const string &str4)
+{
+  if (placeStringToRow(str4) == INVALID_COORDINATE ||
+      placeStringToColumn(str4) == INVALID_COORDINATE)
+  {
+    return false;
+  }
+  return true;
+}
