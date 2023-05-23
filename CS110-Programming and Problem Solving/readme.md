@@ -1,4 +1,4 @@
-An introduction to problem-solving techniques, the fundamental concepts of programming, and the software design process (C++). 
+***An introduction to problem-solving techniques, the fundamental concepts of programming, and the software design process (C++).***
 
 **Topics include**
 * data types

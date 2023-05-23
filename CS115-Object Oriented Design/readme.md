@@ -1,4 +1,4 @@
-This course focuses on the concepts of object-oriented programming. 
+***This course focuses on the concepts of object-oriented programming.***
 
 **Topics include**
 * data abstraction
