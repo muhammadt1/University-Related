@@ -107,7 +107,7 @@ int main()
       
       m[mult1].Mult(m[mult2],resultOfMult);
 
-      cout << "Multiplied Matrix: ";
+      cout << "Multiplied  Matrix: ";
       resultOfMult.Print();
 
 
