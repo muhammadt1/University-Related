@@ -1,4 +1,4 @@
-# Lab 4
+## Lab 4
 
 * In this lab we were tasked to create a figma prototype of a tourist app set in a fictional world.
 
