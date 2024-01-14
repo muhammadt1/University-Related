@@ -1,4 +1,4 @@
-# ENSE-374: Software Engineering Principles
+# ENSE-374: Software Engineering Management
 
 ## Class Description
 
