@@ -13,9 +13,9 @@ The course focuses on the following topics:
 - **Dynamic Binding**
 - **Polymorphism and Dynamic Memory Management**
 
-## Assignments Overview
+## Assignments Description
 
-### Go-Playing Console Program
+### Go Console Program
 
 Over the course of the term, you will be working on developing a console program that plays the game of Go against the user. The program features include:
 
