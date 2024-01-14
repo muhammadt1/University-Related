@@ -1,5 +1,6 @@
-# ENSE-374
+# ENSE-374: Software Engineering Principles
 
-**Class Description**
-* Principles of software engineering: requirements, design and testing. Review of principles of object orientation. Object oriented analysis using UML. Frameworks and APIs. Introduction to the client-server architecture. Analysis, design and programming of simple servers and clients. Introduction to user interface technology.
+## Class Description
+
+Welcome to ENSE-374, a course that explores the fundamental principles of software engineering. Throughout this class, we'll cover crucial aspects including requirements gathering, design methodologies, and testing strategies. Additionally, there will be a comprehensive review of object-oriented principles, with a focus on utilizing the Unified Modeling Language (UML) for effective system analysis.
 
