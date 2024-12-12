@@ -4,12 +4,8 @@
 # CS115: Object-Oriented Programming 
 >>>>>>> 03a9c2605c4da02cfaf9f6c99e6519134588e9d7
 
-<<<<<<< HEAD
 **Class Description** 
 This course focuses on the concepts of object-oriented programming. Topics include data abstraction, classes, composition and inheritance, subtyping, dynamic binding, polymorphism and dynamic memory management. Other topics include type systems, two-dimensional arrays, records, references, searching and sorting algorithms, language translation. Software engineering: comprehensibility, correctness, efficiency, refactoring.
-=======
-This repository contains the source code for assignments related to the concepts of object-oriented programming covered in the CS115 course.
->>>>>>> 03a9c2605c4da02cfaf9f6c99e6519134588e9d7
 
 <<<<<<< HEAD
 **Assignments Overview**
