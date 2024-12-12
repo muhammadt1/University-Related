@@ -16,4 +16,6 @@ This repository serves as a comprehensive archive of projects undertaken through
 
 ### [ENSE-374: Software Engineering Management](https://github.com/muhammadt1/University-Related/tree/main/ENSE374%20-%20Software%20Engineering%20Management)
 
+### [ENSE-352: Fundamentals of Computer Systems Architecture](https://github.com/muhammadt1/University-Related/tree/main/ENSE%20352%20-%20Fundamentals%20of%20Computer%20Systems%20Architectures)
+
 
